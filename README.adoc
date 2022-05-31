@@ -1,0 +1,30 @@
+= Find Middle
+:numbered:
+:toc: preamble
+:toc-title: Table of contents
+
+Program reads a file. In the future is gonna transform it and save the results to another file.
+The file contains in each line key-value pair where key is a number of type Long and value is number of type Double.
+Transformation is called normalization.
+The transformation must scale all values to fit the [-1; 1] interval.
+Where max is 1, min -1. The output file must preserve the input file’s key-value order.
+The file can contain billions of rows and may not fit in memory.
+For sample values: [1000.0, 2000.0, 100.0, 10000.0] the result is: [-0.818182, -0.616162, -1, 1]
+normalization expression: ((x - min) * 2 / max - min) - 1 == Dependencies
+
+You are going to need the following:
+
+* Java 8+
+* Scala 2.13+
+
+== How to run
+
+*FIXME*
+
+== Example of usage
+
+FIXME
+
+== Troubleshooting
+
+FIXME
